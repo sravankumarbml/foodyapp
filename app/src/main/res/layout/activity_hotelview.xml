@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotelviewActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="41dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/backarrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel The Grand"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/icon1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/icon1" />
+
+            <RelativeLayout
+                android:id="@+id/hotel_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon1">
+
+                <ImageView
+                    android:id="@+id/largeImage"
+                    android:layout_width="340dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hotelviewimg" />
+
+                <RelativeLayout
+                    android:id="@+id/largeRectangle"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_background">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/hotelicon1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/star" />
+
+                        <TextView
+                            android:id="@+id/popularfoodrating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="4.8"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/secondRectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignEnd="@id/largeImage"
+                    android:layout_alignBottom="@id/largeImage"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="#CCFFFFFF">
+
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Hotel the Grand"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="2dp"
+                            android:src="@drawable/star" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/star" />
+
+                        <TextView
+                            android:id="@+id/offerrating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="18dp"
+                            android:text="4.8 rating"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/hotelsliderImage"
+                android:layout_width="340dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/viewhtlimage"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotel_box" />
+
+            <LinearLayout
+                android:id="@+id/hotebtns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hotelsliderImage">
+
+
+                <TextView
+                    android:id="@+id/ordersbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/optbutton"
+                    android:gravity="center"
+                    android:text="Biryani"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@+id/placedbtns"
+                    tools:layout_editor_absoluteX="44dp" />
+
+                <TextView
+                    android:id="@+id/grocerybutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/optbutton2"
+                    android:gravity="center"
+                    android:text="Startters"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@+id/placedbtns"
+                    tools:layout_editor_absoluteX="44dp" />
+
+
+                <TextView
+                    android:id="@+id/Instantbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/optbutton2"
+                    android:gravity="center"
+                    android:text="Main Course"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@+id/placedbtns"
+                    tools:layout_editor_absoluteX="44dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Hotelfood1"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/instantfood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hotebtns">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/br1" />
+
+                <TextView
+                    android:id="@+id/instanttext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Chicken Dum Biryani"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/instantgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instanttext1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/Hotelicon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/Hotelfoodrating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icon1"
+                        android:text="4.8"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instantgroup"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imageView"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="199/-"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/van" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Free Delivery"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/instanttext1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp">
+
+                    <TextView
+                        android:id="@+id/valueTextplus"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueText"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextminus"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="-" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Hotelfood1item2"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/instantfood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Hotelfood1">
+
+                <ImageView
+                    android:id="@+id/imageViewitem2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/br2" />
+
+                <TextView
+                    android:id="@+id/instanttext1item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageViewitem2"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Instant veg noodles"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/instantgroupitem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instanttext1item2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageViewitem2"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/Hotelicon1item2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/Hotelfoodratingitem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/Hotelicon1item2"
+                        android:text="4.8"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instantgroupitem2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imageViewitem2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="199/-"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/van" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Free Delivery"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/instanttext1item2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp">
+
+                    <TextView
+                        android:id="@+id/valueTextplusitem2"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextitem2"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextminusitem2"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="-" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Hotelfood1item3"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/instantfood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Hotelfood1item2">
+
+                <ImageView
+                    android:id="@+id/imageViewitem3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/br3" />
+
+                <TextView
+                    android:id="@+id/instanttext1item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageViewitem3"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Instant veg noodles"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/instantgroupitem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instanttext1item3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageViewitem3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/Hotelicon1item3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/Hotelfoodratingitem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/Hotelicon1item3"
+                        android:text="4.8"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instantgroupitem3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imageViewitem3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="199/-"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/van" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Free Delivery"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/instanttext1item3"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp">
+
+                    <TextView
+                        android:id="@+id/valueTextplusitem3"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextitem3"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextminusitem3"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="-" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Hotelfood1item4"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/instantfood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Hotelfood1item3">
+
+                <ImageView
+                    android:id="@+id/imageViewitem4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/br4"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/instanttext1item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageViewitem4"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Instant veg noodles"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/instantgroupitem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instanttext1item4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageViewitem4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/Hotelicon1item4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/Hotelfoodratingitem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/Hotelicon1item4"
+                        android:text="4.8"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instantgroupitem4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imageViewitem4"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="199/-"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/van" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Free Delivery"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/instanttext1item4"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp">
+
+                    <TextView
+                        android:id="@+id/valueTextplusitem4"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextitem4"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextminusitem4"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="-" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Hotelfood1item5"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/instantfood"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Hotelfood1item4">
+
+                <ImageView
+                    android:id="@+id/imageViewitem5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/br1"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/instanttext1item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/imageViewitem5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Instant veg noodles"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/instantgroupitem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instanttext1item5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imageViewitem5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/Hotelicon1item5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/Hotelfoodratingitem5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/Hotelicon1item5"
+                        android:text="4.8"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/instantgroupitem5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imageViewitem5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="199/-"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/van" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Free Delivery"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="23dp"
+                    android:layout_toEndOf="@id/instanttext1item5"
+                    android:orientation="horizontal"
+                    android:paddingLeft="70dp">
+
+                    <TextView
+                        android:id="@+id/valueTextplusitem5"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextitem5"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/valueTextminusitem5"
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellowshade"
+                        android:gravity="center"
+                        android:text="-" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/box4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="45dp"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/Hotelfood1item5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/box3"
+        android:text="Place Order"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:backgroundTint="@color/yellowshade"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/foodview"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

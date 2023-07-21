@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="178dp"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittextbg"
+    >
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:src="@drawable/pic1"
+        android:scaleType="centerCrop"
+        android:id="@+id/offerimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/offeritem"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Panner Butter masalajhjgj"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/offerhotel"
+            android:text="Hotel Surya"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dot"
+            android:id="@+id/icon1"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veg"
+            android:id="@+id/offertype"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/star"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="2dp"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="2dp"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="2dp"/>
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="2dp"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/offerrating"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:text="5.0 rating"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="350/- Now at"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/offepricebefore"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="-2dp"
+            android:text="199/-"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/van" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Delivery"
+            android:textStyle="bold"
+            android:textSize="8sp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

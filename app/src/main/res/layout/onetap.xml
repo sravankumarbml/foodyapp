@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="7dp"
+    android:background="@drawable/edittextbg"
+    >
+
+    <ImageView
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/pic1"
+        android:id="@+id/offerimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groceryofferitemtext"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Ketchup"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groceryofferitemrate"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="₹ 110/-"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/valueTextplus"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellowshade"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/valueText"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/valueTextminus"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellowshade"
+            android:gravity="center"
+            android:text="-"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

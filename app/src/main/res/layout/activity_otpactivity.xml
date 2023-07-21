@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:src="@drawable/backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/icon1"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/OTP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icon1"
+        />
+
+    <LinearLayout
+        android:id="@+id/otpboxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/OTP"
+        android:paddingVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="42dp"
+        >
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:background="@drawable/otp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="39dp"
+            android:inputType="number"/>
+        />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:background="@drawable/otp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="39dp"
+            android:inputType="number"/>
+        />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:background="@drawable/otp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="39dp"
+            android:inputType="number"/>
+        />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/otp"
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/confirnbtn"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/otpboxes"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <LinearLayout
+        android:id="@+id/signindown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_marginLeft="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Didn't receive?"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:id="@+id/resend"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
